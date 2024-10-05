@@ -1,1 +1,1 @@
-﻿# Gadgets_hrizon is a static tech gadgets review site
+﻿# Gadgets_Hrizon is a static tech gadgets review site
