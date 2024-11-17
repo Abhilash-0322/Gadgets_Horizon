@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 
-/* Sticky header */
+ /* Sticky header */
 header {
     background-color: #fff;
     color: black;
@@ -81,61 +81,92 @@ main {
 }
 
 h2 {
-    margin-bottom: 20px;
     color: #333;
-    font-size: 24px;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.review-page {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .review-section {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
-.review-section a{
-    text-decoration: none;;
+.review-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.review-section a:visited{
-    text-decoration: none;
+.review-header img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.review-rating {
+    background-color: #ff9900;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+
+.review-content {
+    flex: 2;
+    padding: 0 20px;
+}
+
+.review-content h3 {
+    font-size: 24px;
     color: #333;
 }
 
-.card {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 20px 10px;
-    width: 30%;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-.card-content {
-    padding: 15px;
-}
-
-.card h3 {
-    margin: 0 0 10px;
-    font-size: 22px;
-}
-
-.card p {
-    margin: 5px 0;
+.review-text {
+    line-height: 1.8;
     color: #555;
+    margin-top: 10px;
+}
+
+.review-aside {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.review-aside h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.review-aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.review-aside ul li {
+    background-color: white;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+.review-aside ul li span {
+    font-weight: bold;
 }
 
 footer {

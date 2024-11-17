@@ -1,213 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gadget Reviews</title>
-    <link rel="shortcut icon" href="advancement.png" type="image/x-icon">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-
-        /* Sticky header */
-        header {
-            background-color: #fff;
-            color: black;
-            padding: 10px 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        /* Flexbox for header */
-        header .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-            padding: 15px 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #ff9900;
-        }
-
-        /* Search bar */
-        .search-container {
-            position: relative;
-        }
-
-        .search-bar {
-            padding: 7px;
-            font-size: 16px;
-            border: 2px solid #333;
-            border-radius: 20px;
-            width: 250px;
-        }
-
-        .search-button {
-            position: absolute;
-            right: 5px;
-            top: 50%;
-            transform: translateY(-50%);
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-            font-size: 18px;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        h2 {
-            color: #333;
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
-
-        .review-page {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-        }
-
-        .review-section {
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .review-header {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .review-header img {
-            width: 100%;
-            max-width: 400px;
-            border-radius: 8px;
-        }
-
-        .review-rating {
-            background-color: #ff9900;
-            padding: 5px 10px;
-            border-radius: 5px;
-            display: inline-block;
-            color: white;
-            font-weight: bold;
-        }
-
-        .review-content {
-            flex: 2;
-            padding: 0 20px;
-        }
-
-        .review-content h3 {
-            font-size: 24px;
-            color: #333;
-        }
-
-        .review-text {
-            line-height: 1.8;
-            color: #555;
-            margin-top: 10px;
-        }
-
-        .review-aside {
-            background-color: #f8f8f8;
-            padding: 15px;
-            border-radius: 8px;
-            width: 100%;
-            max-width: 300px;
-        }
-
-        .review-aside h4 {
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .review-aside ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .review-aside ul li {
-            background-color: white;
-            padding: 8px;
-            margin-bottom: 8px;
-            border-radius: 5px;
-        }
-
-        .review-aside ul li span {
-            font-weight: bold;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
-        }
-    </style>
+    <title>Gadget Horizon</title>
+    <link rel="shortcut icon" href="images/advancement.png" type="image/x-icon">
+    <link rel="stylesheet" href="reviews.css">
 </head>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gadget Reviews</title>
-    <link rel="shortcut icon" href="advancement.png" type="image/x-icon">
-    <link rel="stylesheet" href="home.css">
-</head>
-
 <body>
-    <header></header>
+    <header>
         <div class="header-container">
-            <h1>Gadget Reviews</h1>
+            <h1>Gadget Horizon</h1>
             <div>
                 <input type="text" id="search-bar" placeholder="Search gadgets, reviews...">
             </div>
             <div id="login">
-                <button>Login</button>
+                <a href="login.html"><button>Login</button></a> 
             </div>
         </div>
         <nav>
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="#">Buying Guides</a></li>
-                <li><a href="#">Gaming</a></li>
+                <li><a href="buying.html">Buying Guides</a></li>
+                <li><a href="gaming.html">Gaming</a></li>
                 <li><a href="#">Gear</a></li>
                 <li><a href="#">Entertainment</a></li>
             </ul>
@@ -217,7 +33,7 @@
     <main>
         <div class="review-page">
             <!-- Review 1 -->
-            <div class="review-section">
+            <div class="review-section" id="iphone-16">
                 <div class="review-header">
                     <h2>Apple iPhone 16 Review</h2>
                     <img src="images/b9a38080-756d-11ef-9fbd-6b990c391cf6.webp" alt="iPhone 16">

@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gadget Reviews</title>
-    <link rel="shortcut icon" href="advancement.png" type="image/x-icon">
-    <link rel="stylesheet" href="home.css">
-</head>
-
-<body>
-    <header></header>
-        <div class="header-container">
-            <h1>Gadget Reviews</h1>
-            <div>
-                <input type="text" id="search-bar" placeholder="Search gadgets, reviews...">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gadget Horizon</title>
+        <link rel="shortcut icon" href="images/advancement.png" type="image/x-icon">
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <h1>Gadget Horizon</h1>
+                <div>
+                    <input type="text" id="search-bar" placeholder="Search gadgets, reviews...">
+                </div>
+                <div id="login">
+                    <a href="login.html"><button>Login</button></a> 
+                </div>
             </div>
-            <div id="login">
-                <button>Login</button>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="#">Buying Guides</a></li>
-                <li><a href="#">Gaming</a></li>
-                <li><a href="#">Gear</a></li>
-                <li><a href="#">Entertainment</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="buying.html">Buying Guides</a></li>
+                    <li><a href="gaming.html">Gaming</a></li>
+                    <li><a href="#">Gear</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
         <section class="featured-reviews">
             <h2>Featured Reviews</h2>
-            <div class="review-section">
+            <div class="review-section" style="text-decoration: none;">
                 <div class="card">
                     <img src="images/b9a38080-756d-11ef-9fbd-6b990c391cf6.webp" alt="iPhone Review">
-                    <div class="card-content">
-                        <h3>Apple iPhone 16 Review</h3>
-                        <p>Closing the gap to the pro models</p>
-                        <p>Rating: 90/100</p>
-                        <p>By Billy Steele • 09.20.2024</p>
-                    </div>
+                    <!-- <link rel="review-page" href="reviews.html"> -->
+                    <a href="reviews.html#iphone-16">
+                        <div class="card-content">
+                            <h3>Apple iPhone 16 Review</h3>
+                            <p>Closing the gap to the pro models</p>
+                            <p>Rating: 90/100</p>
+                            <p>By Billy Steele • 09.20.2024</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="card">
                     <img src="images/633ff305f9d3d8187c709cf5-samsung-galaxy-book-pro-intel-evo.jpg" alt="Samsung Flip Review">
@@ -103,14 +105,14 @@
                         <p>Nathan Ingraham • 05.09.2024</p>
                     </div>
                 </div>
-        </section>
+            </section>
         </section>
     </main>
-
+    
     <footer>
         <p>&copy; 2024 Gadget Reviews. All rights reserved.</p>
     </footer>
-
+    
 </body>
 
 </html>
