@@ -11,28 +11,6 @@ document.getElementById('search-bar').addEventListener('input', function (e) {
     });
 });
 
-// document.querySelectorAll('.card').forEach(card => {
-//     card.addEventListener('click', function () {
-//         const modalContent = card.innerHTML;
-//         const modal = document.createElement('div');
-//         modal.className = 'modal';
-//         modal.innerHTML = `
-//             <div class="modal-content">
-//                 ${modalContent}
-//                 <button class="close-modal">Close</button>
-//             </div>
-//         `;
-//         document.body.appendChild(modal);
-//         document.querySelector('.close-modal').addEventListener('click', () => modal.remove());
-//     });
-// });
-
-document.addEventListener('DOMContentLoaded', function () {
-    const lazyImages = document.querySelectorAll('img');
-    lazyImages.forEach(img => {
-        img.loading = 'lazy';
-    });
-});
 
 const scrollTopBtn = document.createElement('button');
 scrollTopBtn.id = 'scroll-top';

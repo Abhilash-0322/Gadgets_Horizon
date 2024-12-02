@@ -10,7 +10,7 @@ body {
 header {
     background-color: #fff;
     color: black;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     position: sticky;
@@ -139,6 +139,15 @@ h2 {
     margin: 5px 0;
     color: #555;
 }
+
+#gamingCarousel video {
+    max-height: 650px; /* Adjust to your desired height */
+    object-fit: cover; /* Ensures the video scales proportionally */
+  }
+
+  #gamingCarousel .carousel-inner {
+    height: auto; /* Ensures carousel adjusts to video content */
+  }
 
 footer {
     background-color: #333;

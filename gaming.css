@@ -10,7 +10,7 @@ body {
 header {
     background-color: #fff;
     color: black;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     position: sticky;
@@ -76,4 +76,13 @@ nav ul li a:hover {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 500px;
+    position: sticky;
 }

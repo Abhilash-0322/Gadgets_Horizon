@@ -6,15 +6,13 @@
     <title>Gadget Awesome</title>
     <link rel="shortcut icon" href="images/advancement.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="gear.css">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="header-container">
             <h1>Gadget Horizon</h1>
-            <!-- <div>
-                <input type="text" id="search-bar" placeholder="Search gadgets, reviews...">
-            </div> -->
             <div>
                 <div style="position: relative; display: inline-block;">
                     <i class="fa-solid fa-magnifying-glass" style="
@@ -40,9 +38,51 @@
                 <li><a href="#">Entertainment</a></li>
             </ul>
         </nav>
+    </header> -->
+    <header>
+        <!-- Bootstrap CSS -->
+        <div class="container-fluid bg-dark text-light">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Gadget Horizon</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="reviews.html">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="buying.html">Buying Guides</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gaming.html">Gaming</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gear.html">3D</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Entertainment</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <div id="search-bar" class="input-group">
+                                <span class="input-group-text bg-light border-0"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input class="form-control" type="search" placeholder="Search gadgets, reviews..." aria-label="Search">
+                            </div>
+                        </form>
+                        <a href="login.html" class="btn btn-primary ms-3">Login</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <main style="flex-wrap: wrap; justify-content: center;">
-        <h2>Treding Gears</h2>
+        <h2 style="background-color: black; color: white;">AR</h2>
         <div style="display: flex; gap: 10px; cursor: pointer;">
             <iframe class="gear" id="gear1" src="https://lumalabs.ai/embed/36783a60-d040-442d-80f3-b8bca256e225?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="374" height="500" frameborder="0" title="luma embed" style="border: none;"></iframe>
             <iframe class="gear" id="gear2" src="https://lumalabs.ai/embed/7f763b07-15bc-430e-84bf-9825f8e0c89e?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="375" height="500" frameborder="0" title="luma embed" style="border: none;"></iframe>
@@ -52,6 +92,18 @@
             <iframe class="gear" id="gear6" src="https://lumalabs.ai/embed/90449613-d135-49db-92c9-20e70c2b9672?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="376" height="500" frameborder="0" title="luma embed" style="border: none;"></iframe>
         </div>
     </main>
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2024 Gadget Horizon. All Rights Reserved.</p>
+        <div class="social-icons">
+          <a href="#" class="text-light mx-2"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-light mx-2"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </footer>
     <script src="gear.js"></script>
+    <!-- Add Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
