@@ -12,6 +12,7 @@ header {
     color: black;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -49,6 +50,7 @@ nav ul {
     justify-content: center;
     background-color: #333;
     padding: 15px 0;
+    border-radius: 5px;
     margin: 0;
 }
 
@@ -74,4 +76,11 @@ nav ul li a:hover {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.gear{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
 }

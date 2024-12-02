@@ -6,13 +6,25 @@
     <title>Gadget Horizon</title>
     <link rel="shortcut icon" href="images/advancement.png" type="image/x-icon">
     <link rel="stylesheet" href="reviews.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="header-container">
             <h1>Gadget Horizon</h1>
-            <div>
+            <!-- <div>
                 <input type="text" id="search-bar" placeholder="Search gadgets, reviews...">
+            </div> -->
+            <div>
+                <div style="position: relative; display: inline-block;">
+                    <i class="fa-solid fa-magnifying-glass" style="
+                                            position: absolute;
+                                            left: 10px;
+                                            top: 50%;
+                                            transform: translateY(-50%);
+                                            color: #999;"></i>
+                    <input type="text" id="search-bar" placeholder="Search gadgets, reviews..." style="padding-left: 35px; width: 100%; box-sizing: border-box;">
+                </div>  
             </div>
             <div id="login">
                 <a href="login.html"><button>Login</button></a> 

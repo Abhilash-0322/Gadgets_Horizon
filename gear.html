@@ -12,8 +12,19 @@
     <header>
         <div class="header-container">
             <h1>Gadget Horizon</h1>
-            <div>
+            <!-- <div>
                 <input type="text" id="search-bar" placeholder="Search gadgets, reviews...">
+            </div> -->
+            <div>
+                <div style="position: relative; display: inline-block;">
+                    <i class="fa-solid fa-magnifying-glass" style="
+                                            position: absolute;
+                                            left: 10px;
+                                            top: 50%;
+                                            transform: translateY(-50%);
+                                            color: #999;"></i>
+                    <input type="text" id="search-bar" placeholder="Search gadgets, reviews..." style="padding-left: 35px; width: 100%; box-sizing: border-box;">
+                </div>  
             </div>
             <div id="login">
                 <a href="login.html"><button>Login</button></a> 
@@ -30,8 +41,17 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main style="flex-wrap: wrap; justify-content: center;">
         <h2>Treding Gears</h2>
+        <div style="display: flex; gap: 10px; cursor: pointer;">
+            <iframe class="gear" id="gear1" src="https://lumalabs.ai/embed/36783a60-d040-442d-80f3-b8bca256e225?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="374" height="500" frameborder="0" title="luma embed" style="border: none;"></iframe>
+            <iframe class="gear" id="gear2" src="https://lumalabs.ai/embed/7f763b07-15bc-430e-84bf-9825f8e0c89e?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="375" height="500" frameborder="0" title="luma embed" style="border: none;"></iframe>
+            <iframe class="gear" id="gear3" src="https://lumalabs.ai/embed/83e9aae8-7023-448e-83a6-53ccb377ec86?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="374" height="500" frameborder="0" title="luma embed" style="border: none;"></iframe>
+            <!-- <iframe class="gear" id="gear4" src="https://lumalabs.ai/embed/a4572635-8066-45d2-94b5-ffd4c55a92f0?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="667" height="500" frameborder="0" title="luma embed" style="border: none;"></iframe>
+            <iframe class="gear" id="gear5" src="https://lumalabs.ai/embed/2b2112cd-9aa0-44f3-88b3-fde365066a3b?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="556" height="500" frameborder="0" title="luma embed" style="border: none;"></iframe> -->
+            <iframe class="gear" id="gear6" src="https://lumalabs.ai/embed/90449613-d135-49db-92c9-20e70c2b9672?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="376" height="500" frameborder="0" title="luma embed" style="border: none;"></iframe>
+        </div>
     </main>
+    <script src="gear.js"></script>
 </body>
 </html>

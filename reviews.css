@@ -13,6 +13,7 @@ header {
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
+    border-radius: 10px;
     top: 0;
     z-index: 1000;
 }
@@ -49,6 +50,7 @@ nav ul {
     justify-content: center;
     background-color: #333;
     padding: 15px 0;
+    border-radius: 5px;
     margin: 0;
 }
 
@@ -110,6 +112,7 @@ h2 {
 
 .review-header img {
     width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     border-radius: 8px;
 }
@@ -118,6 +121,7 @@ h2 {
     background-color: #ff9900;
     padding: 5px 10px;
     border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: inline-block;
     color: white;
     font-weight: bold;
@@ -142,7 +146,9 @@ h2 {
 .review-aside {
     background-color: #f8f8f8;
     padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    z-index: 1;
     width: 100%;
     max-width: 300px;
 }

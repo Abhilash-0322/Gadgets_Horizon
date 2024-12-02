@@ -13,10 +13,15 @@
             <div class="header-container">
                 <h1>Gadget Horizon</h1>
                 <div>
-                    <div style="display: flex; flex-wrap: wrap;">
-                        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-                        <input type="text" id="search-bar" placeholder="Search gadgets, reviews...">
-                    </div>   
+                    <div style="position: relative; display: inline-block;">
+                        <i class="fa-solid fa-magnifying-glass" style="
+                                                position: absolute;
+                                                left: 10px;
+                                                top: 50%;
+                                                transform: translateY(-50%);
+                                                color: #999;"></i>
+                        <input type="text" id="search-bar" placeholder="Search gadgets, reviews..." style="padding-left: 35px; width: 100%; box-sizing: border-box;">
+                    </div>  
                 </div>
                 <div id="login">
                     <a href="login.html"><button>Login</button></a> 
@@ -52,30 +57,36 @@
                 </div>
                 <div class="card">
                     <img src="images/633ff305f9d3d8187c709cf5-samsung-galaxy-book-pro-intel-evo.jpg" alt="Samsung Flip Review">
+                    <a href="reviews.html#iphone-16">
                     <div class="card-content">
                         <h3>Samsung Galaxy Flip 6 Review</h3>
                         <p>A better foldable for everyone</p>
                         <p>Rating: 86/100</p>
                         <p>By Mat Smith • 07.29.2024</p>
                     </div>
+                </a>
                 </div>
                 <div class="card">
                     <img src="images/fe731500-4b4b-11ef-b375-e212f0bf724b.webp" alt="Samsung Z Fold Review">
-                    <div class="card-content">
-                        <h3>Samsung Z Fold 6 Review</h3>
-                        <p>The king of foldables</p>
-                        <p>Rating: 86/100</p>
-                        <p>By Sam Rutherford • 07.19.2024</p>
-                    </div>
+                    <a href="reviews.html#iphone-16">
+                        <div class="card-content">
+                            <h3>Samsung Z Fold 6 Review</h3>
+                            <p>The king of foldables</p>
+                            <p>Rating: 86/100</p>
+                            <p>By Sam Rutherford • 07.19.2024</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="card">
                     <img src="images/9c1f1230-3310-11ef-bab7-bb286fa69975.webp" alt="surface pro review">
+                    <a href="reviews.html#iphone-16">
                     <div class="card-content">
                         <h3>Surface Pro Copilot+ review: The best Surface tablet ever made, no thanks to AI</h3>
                         <p>Arm-powered Surface tablet</p>
                         <p>Rating: 88/100</p>
                         <p>Sam Rutherford • 07.02.2024</p>
                     </div>
+                </a>
                 </div>
                 <div class="card">
                     <img src="images/fa306b40-fcc8-11ee-bd7e-680f2fb9f753.webp" alt="Samsung Flip Review">
@@ -116,6 +127,7 @@
     <footer>
         <p>&copy; 2024 Gadget Reviews. All rights reserved.</p>
     </footer>
+    <script src="index.js"></script>
     
 </body>
 
