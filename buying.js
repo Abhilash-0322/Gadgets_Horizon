@@ -1,7 +1,7 @@
 // const process = require('process');
 // const apikey=process.env.API_KEY;
-const apiKey = 'YOUR_API_KEY'; // your YouTube API key here
-const videoIds = ["eDqfg_LexCQ", "usb-9tmZMuQ","HMX0vrJj5nM"]; // video IDs here
+const apiKey = 'AIzaSyB_AZ7DL1RSuH5QzHkJxhWpWeafuyqD9PU';
+const videoIds = ["eDqfg_LexCQ", "usb-9tmZMuQ","HMX0vrJj5nM","K7Q5iYHvgwo"]; // video IDs here
 
 videoIds.forEach(videoId => {
     const url = `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${apiKey}`;

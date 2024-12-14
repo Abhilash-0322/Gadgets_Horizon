@@ -86,3 +86,9 @@ footer {
     margin-top: 500px;
     position: sticky;
 }
+
+#gaming-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

@@ -141,6 +141,7 @@ h2 {
 }
 
 #gamingCarousel video {
+    margin-top: 0.05px;
     max-height: 650px; /* Adjust to your desired height */
     object-fit: cover; /* Ensures the video scales proportionally */
   }
